@@ -1,0 +1,82 @@
+/* import the google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+*,
+*::before,
+*::after {
+  /* supress browser defaults and select alt box model */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+  /* set variables for colors */
+  --bg-primary: var(#344e41);
+  --bg-secondary: var(#e0ded9);
+  --font-color-primary: var(#ffffff);
+  --font-color-secondary: var(#a3b18a);
+  --backup-color: var(#588157);
+}
+
+/* this styling is desktop first -- vh=viewpointheight*/
+body {
+  height: 100vh;
+  background: var(--bg-primary);
+}
+
+/* style the header/navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 50px;
+}
+
+/* style the children of the header */
+.navbar h2 {
+  color: var(--font-color-primary);
+  font-weight: 700;
+}
+
+.navbar nav ul {
+  display: flex; /*double check this*/
+}
+
+.navbar ul li {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--font-color-secondary);
+  font-size: 16px; /*shazam*/
+  margin-right: 25px;
+  transition: color 0.3s ease; /*animation must be triggered by an event*/
+}
+
+/* event that triggers line 54, specify outcome of transition */
+.navbar ul li:hover a {
+  color: var(--font-color-primary);
+}
+
+/* remove the margin of the rightmost list item */
+.navbar ul li:last-child a {
+  margin-right: 0;
+}
+
+/* style of hire me button */
+.hire-button {
+  background: var(--backup-color);
+  color: var(--font-color-primary);
+  padding: 6px 16px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.hire-button:hover {
+  background: var(--font-color-secondary);
+  color: var(--bg-primary);
+}
