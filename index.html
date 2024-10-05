@@ -5,12 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alida Narkaj's Portfolio</title>
     <!-- favicon -->
-
-    <!-- import for boxicons -->
-    <!-- <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    /> -->
+    <link rel="icon" type="image/jpg" href="/assets/img/favicon.ico" />
   </head>
 
   <body>
@@ -20,9 +15,9 @@
       <!-- nav bar -->
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Resume</a></li>
-          <li><a href="#">Fun Facts About Me</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="/html/my_resume.html">Resume</a></li>
+          <li><a href="/html/my_fun_facts.html">Fun Facts About Me</a></li>
         </ul>
       </nav>
     </header>
@@ -41,36 +36,43 @@
           />
         </div>
         <div class="fave-quote">
+          <!-- blockquote indents without styling -->
           <blockquote>
             "In three words I can sum up everything I've learned about life: it
             goes on." —Robert Frost
           </blockquote>
         </div>
       </div>
+
       <!-- about me section -->
       <div class="elevator-pitch">
         <p>
           Hello! My name is Alida Narkaj. I am a senior at Oakland University,
-          expecting to graduate spring of 2025 with a bachelors in Computer
-          Science. I have lived in Michigan for most of my life, having been
+          expected to graduate spring of 2025 with a bachelors in Computer
+          Science. I have lived in Michigan for most of my life, though I was
           born in Albania. I used to work at my local Target as a Service &
           Engagement Team Leader for three years, managing a team of about sixty
-          people has definitly helped me gain my leadership skills. My
-          professional interests involve front-end web development which is why
-          I ended up leaving my managerial position to pursue career in this
+          people has helped me strengthen my leadership skills. My professional
+          interests involve front-end web development which is why I ended up
+          leaving my managerial position at Target to pursue a career in this
           field. To know more about me, have a look at my
           <a href="/html/my_resume.html">resume</a> and
           <a href="/html/my_fun_facts.html">about me</a> page!
         </p>
       </div>
-      <div class="progress-bar">
-        <progress max="128" value="120"</progress>
-      </div>
-      
+
+      <!-- progress bar for graduation -->
+      <label for="file">Credits Completed Towards Degree: 120</label><br />
+      <progress id="file" value="120" max="128"></progress>
     </main>
   </body>
 
-  <footer>
+  <hr />
 
+  <footer>
+    <!-- copyright and social links -->
+    <p>&copy; 2024 Alida Narkaj</p>
+    <p><a href="mailto:anarkaj@oakland.edu">My Email</a></p>
+    <p><a href="https://www.github.com/alidanarkaj">GitHub</a></p>
   </footer>
 </html>
